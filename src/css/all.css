@@ -1,0 +1,44 @@
+/* Font style */
+.card-title{
+    font-size:large;
+    font-weight:600;
+}
+.lead{
+    font-size:medium;
+}
+.note{
+    font-size:14px;
+}
+.highlight{
+    font-size:16px;
+    font-weight:500;
+}
+
+/* Color */
+.dark-blue{
+    color: #2A384C;
+}
+.blue {
+    color: #A0B2C2;
+}
+.light-blue{
+    color: #D1D9DF;
+}
+.light-gray{
+    color: #F0F0F0;
+}
+.light-brown{
+    color: #D9CCC1;
+}
+
+/* Button style */
+.btn{
+    width:100px;
+    height:40px;
+    background-color:#2A384C;
+    color: white;
+    border-radius:6px;
+}
+.btn:hover{
+    background-color:#A0B2C2;
+}

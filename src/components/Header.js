@@ -12,24 +12,24 @@ import { Box, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: lichihun@umich.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/lichihung/Portfolio.git",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/li-chi-hung-b79615152",
   },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
+  // {
+  //   icon: faMedium,
+  //   url: "https://medium.com",
+  // },
+  // {
+  //   icon: faStackOverflow,
+  //   url: "https://stackoverflow.com",
+  // },
 ];
 
 const Header = () => {
@@ -83,7 +83,7 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      backgroundColor="#18181b"
+      backgroundColor="#2A384C"
       ref={headerRef}
       zIndex="1000"
     >
@@ -114,11 +114,13 @@ const Header = () => {
               {/* Add links to Projects and Contact me section */}
               <a
                 href="#projects"
-                onClick={handleClick("projects")}>
+                onClick={handleClick("projects")}
+                className="card-title">
               Projects</a>
               <a
                 href="#contactme"
-                onClick={handleClick("contactme")}>
+                onClick={handleClick("contactme")}
+                className="card-title">
               Contact Me</a>
             </HStack>
           </nav>

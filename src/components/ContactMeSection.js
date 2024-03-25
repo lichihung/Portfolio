@@ -29,7 +29,7 @@ const LandingSection = () => {
       }
     }
   }, [response]);
-  
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -50,14 +50,13 @@ const LandingSection = () => {
 
   return (
     <FullScreenSection
-      isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="#D1D9DF"
       py={16}
       spacing={8}
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
-          Contact me
+          Contact Me
         </Heading>
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
@@ -67,6 +66,7 @@ const LandingSection = () => {
                 <Input
                   id="firstName"
                   name="firstName"
+                  variant='filled'
                   {...formik.getFieldProps('firstName')}
                 />
                 <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
@@ -77,13 +77,14 @@ const LandingSection = () => {
                   id="email"
                   name="email"
                   type="email"
+                  variant='filled'
                   {...formik.getFieldProps('email')}
                 />
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps('type')}>
+                <Select id="type" name="type" {...formik.getFieldProps('type')} variant='filled'>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
                     Open source consultancy session
@@ -97,11 +98,12 @@ const LandingSection = () => {
                   id="comment"
                   name="comment"
                   height={250}
+                  variant='filled'
                   {...formik.getFieldProps('comment')}
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+              <Button type="submit" backgroundColor="#2A384C" color="white" width="full" isLoading={isLoading}>
                 Submit
               </Button>
             </VStack>
