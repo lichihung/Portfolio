@@ -43,7 +43,7 @@
     grid-column: 1 / 4;
     grid-row: 6;
     text-align:center;
-    margin-top:30px;
+    margin-top:5vh;
 }
 .about-box1, .about-box2, .about-box3, .about-box4{
     display:grid;
@@ -57,14 +57,18 @@
 }
 .about-title{
     grid-area:about-title;
+    padding-bottom:1vh;
 }
 .about-year{
     grid-area:about-year;
+    padding-bottom:1vh;
 }
 .about-company{
     grid-area:about-company;
+    padding-bottom:1vh;
 }
 .about-skill{
     grid-area:about-skill;
     margin-left:-4px;
+    padding-bottom:1vh;
 }
