@@ -9,7 +9,7 @@ import {Center,
   Box,
  } from "@chakra-ui/react";
 
-const skills0 = ["HTML", "CSS", "JavaScript", "React", "Version control", "UX", "UI"];
+const skills0 = ["HTML", "CSS", "JavaScript", "React", "UX", "UI", "Version control"];
 const skills1 = ["Python", "Perl", "TCL"];
 const skills2 = ["Linux operating system", "EDA tools"];
 const resume_url = "https://docs.google.com/document/d/18Ayu_2dnRL1iy2oi4hfqhUxAKW8opgurpfILwFmuKvs/edit?usp=sharing";
@@ -42,21 +42,21 @@ function AboutMeSection(){
         <>
         <FullScreenSection
         backgroundColor="white"
-        p={24}
         alignItems="flex-start"
+        py={16}
         spacing={8}
         >
-          <Heading as="h1" id="about-section">
+          <Heading as="h1" id="about-section" px={{ base: 8, md: 16 }}>
           About Me
           </Heading>
-        <section className="about-section">
+        <Box className="about-section">
             <div className="about-box1">
               <p className="about-year lead">{experiences[0].year}</p>
               <p className="about-title card-title">{experiences[0].title}</p>
               <p className="about-company lead">{experiences[0].company}</p>
               <p className="about-skill">
-                {skills0.map((skill)=>(
-                  <Badge colorScheme='facebook' ml='1'>{skill}</Badge>
+                {skills0.map((skill) => (
+                  <Badge key={skill} colorScheme='facebook' ml='1'>{skill}</Badge>
                 ))}
               </p>
             </div>
@@ -66,7 +66,7 @@ function AboutMeSection(){
               <p className="about-company lead">{experiences[1].company}</p>
               <p className="about-skill">
                 {skills1.map((skill)=>(
-                  <Badge colorScheme='facebook' ml='1'>{skill}</Badge>
+                  <Badge key={skill} colorScheme='facebook' ml='1'>{skill}</Badge>
                 ))}
               </p>
             </div>
@@ -76,7 +76,7 @@ function AboutMeSection(){
               <p className="about-company lead">{experiences[2].company}</p>
               <p className="about-skill">
                 {skills2.map((skill)=>(
-                  <Badge colorScheme='facebook' ml='1'>{skill}</Badge>
+                  <Badge key={skill} colorScheme='facebook' ml='1'>{skill}</Badge>
                 ))}
               </p>
             </div>
@@ -85,13 +85,13 @@ function AboutMeSection(){
               <p className="about-title card-title">{experiences[3].title}</p>
               <p className="about-company lead">{experiences[3].company}</p>
             </div>
-            <Center height='650px' className="divide-line">
+            <Center height='75vh' className="divide-line">
               <Divider orientation='vertical' borderWidth="3px" borderStyle="solid" borderColor="#A0B2C2"/>
             </Center>
             <div className="resume_link">
               <button className="btn highlight"><a href={resume_url}>Resume</a></button>
             </div>
-        </section>
+        </Box>
         </FullScreenSection>
         </>
     )

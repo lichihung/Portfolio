@@ -54,7 +54,7 @@ const LandingSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w={{ base: "100%", md: "1024px" }}  p={{ base: 8, md: 16 }} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
           Contact Me
         </Heading>

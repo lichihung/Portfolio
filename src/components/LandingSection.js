@@ -18,8 +18,8 @@ const LandingSection = () => (
   >
 
     <VStack spacing={16}>
-      <VStack spacing={4}>
-        <Avatar src={profile_img} size="1x1" width="150px" height="150px"/>
+      <VStack spacing={8}>
+        <Avatar src={profile_img} size="1x1" width="170px" height="170px"/>
         <Heading size="md">{greeting}</Heading>
       </VStack>
       <VStack spacing={6}>
