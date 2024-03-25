@@ -85,7 +85,7 @@ function AboutMeSection(){
               <p className="about-title card-title">{experiences[3].title}</p>
               <p className="about-company lead">{experiences[3].company}</p>
             </div>
-            <Center height='75vh' className="divide-line">
+            <Center height='80vh' className="divide-line">
               <Divider orientation='vertical' borderWidth="3px" borderStyle="solid" borderColor="#A0B2C2"/>
             </Center>
             <div className="resume_link">

@@ -7,11 +7,14 @@ const ProjectCard = ({ title, description, imageSrc, url, isGithub, githubLink }
   // Implement the UI for the Card component according to the instructions.
   // You should be able to implement the component with the elements imported above.
   // Feel free to import other UI components from Chakra UI if you wish to.
+  const handleClick = () => {
+    console.log(url);
+  }
   return (
     <div>
     <Card>
       <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
-        <Link href={url} isExternal _hover={{ textDecoration: "none" }}>
+        <Link href={url} _hover={{ textDecoration: "none" }}>
           <Image
           src={imageSrc.substring(1)}
           objectFit="cover"
@@ -24,20 +27,20 @@ const ProjectCard = ({ title, description, imageSrc, url, isGithub, githubLink }
       </Box>
       <CardBody>
         <VStack spacing={3} align="flex-start">
-          <Link href={url} isExternal _hover={{ textDecoration: "none" }}>
+          <Link href={url} _hover={{ textDecoration: "none" }}>
             <Heading size="md">{title}</Heading>
           </Link>
           <Text textColor="#606060">{description}</Text>
           <HStack>
-            <Link href={url} isExternal color="#BDB2A7" as='b'>
+            <a href={url} style={{color:"#BDB2A7", fontWeight: 500}}>
               Go to website <ExternalLinkIcon mx='2px' />
-            </Link>
+            </a>
           </HStack>
           <HStack>
             {isGithub === "true" ?
-              <Link href={githubLink} isExternal color="#BDB2A7" as='b'>
+              <a href={githubLink} style={{color:"#BDB2A7", fontWeight: 500}} >
                 Github <ExternalLinkIcon mx='2px' />
-              </Link>
+              </a>
             :<Box><br/></Box>}
           </HStack>
           </VStack>
