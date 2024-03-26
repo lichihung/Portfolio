@@ -26,7 +26,7 @@ const projects = [
     description:
       "A full plan including persona, journey map, wireframe, and prototype was created using Figma throughout the design process of Little Lemon reserve-a-table web app.",
     getImageSrc: () => require("../assets/Logo.jpg"),
-    url: "https://www.figma.com/file/b2jrJr4VoHi2hmjKzHooc6/Project?type=design&node-id=23%3A1188&mode=design&t=RHc2r6MlfwNmHVQy-1",
+    url: "https://www.figma.com/proto/b2jrJr4VoHi2hmjKzHooc6/Project?type=design&node-id=23-1484&t=ehjPwknrLkGBRR5Y-1&scaling=min-zoom&page-id=23%3A1188&starting-point-node-id=23%3A1484&mode=design",
     isGithub: "false",
   },
   {
