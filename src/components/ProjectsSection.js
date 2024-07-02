@@ -5,35 +5,43 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "AskAgent Website",
+    description:
+      "The website lets real estate agents to showcase their services through videos, creating a digital billboard for clients.",
+    getImageSrc: () => require("../assets/AskAgent.jpg"),
+    url: "https://www.askagent.info/",
+    isGithub: "false",
+  },
+  {
+    title: "Best20Media Website",
+    description:
+      "A travel agency website that curates unique travel experiences and offers a seamless booking system for tailored trips.",
+    getImageSrc: () => require("../assets/Best20Media.jpg"),
+    url: "https://businessbroker.wixstudio.io/my-site-2",
+    isGithub: "false",
+  },
+  {
     title: "Little Lemon Website",
     description:
       "A restaurant website featuring a reserve-a-table function was developed using a React app.",
-    getImageSrc: () => require("../assets/restauranfood.jpg"),
+    getImageSrc: () => require("../assets/Logo.jpg"),
     url: "https://little-lemon-demo.netlify.app",
     isGithub: "true",
     githubLink: "https://github.com/lichihung/little-lemon.git",
   },
   {
-    title: "HouseofPresales Website",
-    description:
-      "A branding website for a real estate client was developed using WIX, and the website has been maintained and optimized since.",
-    getImageSrc: () => require("../assets/houseofpresales_website.jpg"),
-    url: "https://www.wix.com/website-template/view/html/3344",
-    isGithub: "false",
-  },
-  {
     title: "UX/UI Practice",
     description:
-      "A full plan including persona, journey map, wireframe, and prototype was created using Figma throughout the design process of Little Lemon reserve-a-table web app.",
-    getImageSrc: () => require("../assets/Logo.jpg"),
+      "A full plan including persona, journey map, wireframe, and prototype was created using Figma throughout the design process of Little Lemon website.",
+    getImageSrc: () => require("../assets/Figma.jpg"),
     url: "https://www.figma.com/proto/b2jrJr4VoHi2hmjKzHooc6/Project?type=design&node-id=23-1484&t=ehjPwknrLkGBRR5Y-1&scaling=min-zoom&page-id=23%3A1188&starting-point-node-id=23%3A1484&mode=design",
     isGithub: "false",
   },
   {
     title: "Little Kitchen Website",
     description:
-      "The first website I built with HTML, CSS, and JavaScript showcases my sister's handmade desserts and demonstrates the shopping cart and searching feature. ",
-    getImageSrc: () => require("../assets/little_kitchen_website.jpg"),
+      "A website showcasing my sister's handmade desserts, featuring a shopping cart and search functionality, built with HTML, CSS, and JavaScript.",
+    getImageSrc: () => require("../assets/Little_Kitchen_logo.jpg"),
     url: "https://littlekitchen-e601a.web.app",
     isGithub: "true",
     githubLink: "https://github.com/lichihung/LittleKitchen.git",
@@ -54,7 +62,7 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns={{ base: "repeat(1,minmax(0,1fr))", md: "repeat(2,minmax(0,1fr))" }}
+        gridTemplateColumns={{ base: "repeat(1,minmax(0,1fr))", md: "repeat(3,minmax(0,1fr))" }}
         gridGap={12}
       >
         {projects.map((project) => (

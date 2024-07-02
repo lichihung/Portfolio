@@ -9,12 +9,18 @@ import {Center,
   Box,
  } from "@chakra-ui/react";
 
-const skills0 = ["HTML", "CSS", "JavaScript", "React", "UX", "UI", "Version control"];
-const skills1 = ["Python", "Perl", "TCL"];
-const skills2 = ["Linux operating system", "EDA tools"];
+const skills0 = ["WIX", "CMS", "JavaScript", "API", "SEO", "Design"];
+const skills1 = ["HTML", "CSS", "JavaScript", "React", "UX", "UI", "Version control"];
+const skills2 = ["Python", "Perl", "TCL"];
+const skills3 = ["Linux operating system", "EDA tools"];
 const resume_url = "https://docs.google.com/document/d/18Ayu_2dnRL1iy2oi4hfqhUxAKW8opgurpfILwFmuKvs/edit?usp=sharing";
 
 const experiences = [
+  {
+    title: "Web Designer and Web Developer",
+    year: "2024",
+    company: "A.V. Sayson Personal Real Estate Corporation"
+  },
   {
     title: "Meta Front-End Developer Certificate",
     year: "2024",
@@ -84,6 +90,16 @@ function AboutMeSection(){
               <p className="about-year lead">{experiences[3].year}</p>
               <p className="about-title card-title">{experiences[3].title}</p>
               <p className="about-company lead">{experiences[3].company}</p>
+              <p className="about-skill">
+                {skills3.map((skill)=>(
+                  <Badge key={skill} colorScheme='facebook' ml='1'>{skill}</Badge>
+                ))}
+              </p>
+            </div>
+            <div className="about-box5">
+              <p className="about-year lead">{experiences[4].year}</p>
+              <p className="about-title card-title">{experiences[4].title}</p>
+              <p className="about-company lead">{experiences[4].company}</p>
             </div>
             <Center height="auto" className="divide-line">
               <Divider orientation='vertical' borderWidth="3px" borderStyle="solid" borderColor="#A0B2C2"/>
