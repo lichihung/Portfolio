@@ -51,6 +51,9 @@
     text-align:center;
     margin-top:5vh;
 }
+.resume_link button{
+    margin: 10px;
+}
 .about-box1, .about-box2, .about-box3, .about-box4, .about-box5{
     display:grid;
     grid-template-areas: "about-year"

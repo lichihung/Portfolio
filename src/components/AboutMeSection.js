@@ -14,6 +14,7 @@ const skills1 = ["HTML", "CSS", "JavaScript", "React", "UX", "UI", "Version cont
 const skills2 = ["Python", "Perl", "TCL"];
 const skills3 = ["Linux operating system", "EDA tools"];
 const resume_url = "https://drive.google.com/file/d/12iaFR44Ajdh4AzD-7P1c0Mqb6wPLdIfy/view?usp=sharing";
+const portfolio_url = "https://drive.google.com/file/d/1z4cPB0c8-1XegXN1XU4tjSL04pnMm8DK/view?usp=sharing";
 
 const experiences = [
   {
@@ -105,7 +106,8 @@ function AboutMeSection(){
               <Divider orientation='vertical' borderWidth="3px" borderStyle="solid" borderColor="#A0B2C2"/>
             </Center>
             <div className="resume_link">
-              <button className="btn highlight"><a href={resume_url}>Resume</a></button>
+              <button className="btn highlight"><a href={resume_url} target="_blank">Resume</a></button>
+              <button className="btn highlight"><a href={portfolio_url} target="_blank">Portfolio</a></button>
             </div>
         </Box>
         </FullScreenSection>

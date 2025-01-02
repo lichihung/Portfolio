@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, imageSrc, url, isGithub, githubLink }
     <div>
     <Card>
       <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
-        <Link href={url} _hover={{ textDecoration: "none" }}>
+        <Link href={url} _hover={{ textDecoration: "none" }} target="_blank">
           <Image
           src={imageSrc.substring(1)}
           objectFit="cover"
@@ -32,13 +32,13 @@ const ProjectCard = ({ title, description, imageSrc, url, isGithub, githubLink }
           </Link>
           <Text textColor="#606060">{description}</Text>
           <HStack>
-            <a href={url} style={{color:"#BDB2A7", fontWeight: 500}}>
+            <a href={url} style={{color:"#BDB2A7", fontWeight: 500}} target="_blank">
               Go to website <ExternalLinkIcon mx='2px' />
             </a>
           </HStack>
           <HStack>
             {isGithub === "true" ?
-              <a href={githubLink} style={{color:"#BDB2A7", fontWeight: 500}} >
+              <a href={githubLink} style={{color:"#BDB2A7", fontWeight: 500}} target="_blank">
                 Github <ExternalLinkIcon mx='2px' />
               </a>
             :<Box><br/></Box>}
