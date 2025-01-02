@@ -13,13 +13,13 @@ const skills0 = ["WIX", "CMS", "JavaScript", "API", "SEO", "Design"];
 const skills1 = ["HTML", "CSS", "JavaScript", "React", "UX", "UI", "Version control"];
 const skills2 = ["Python", "Perl", "TCL"];
 const skills3 = ["Linux operating system", "EDA tools"];
-const resume_url = "https://docs.google.com/document/d/18Ayu_2dnRL1iy2oi4hfqhUxAKW8opgurpfILwFmuKvs/edit?usp=sharing";
+const resume_url = "https://drive.google.com/file/d/12iaFR44Ajdh4AzD-7P1c0Mqb6wPLdIfy/view?usp=sharing";
 
 const experiences = [
   {
     title: "Web Designer and Web Developer",
     year: "2024",
-    company: "A.V. Sayson Personal Real Estate Corporation"
+    company: "Pinpoint Listings Marketing Group"
   },
   {
     title: "Meta Front-End Developer Certificate",
