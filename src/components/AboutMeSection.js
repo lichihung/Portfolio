@@ -13,8 +13,8 @@ const skills0 = ["WIX", "CMS", "JavaScript", "API", "SEO", "Design"];
 const skills1 = ["HTML", "CSS", "JavaScript", "React", "UX", "UI", "Version control"];
 const skills2 = ["Python", "Perl", "TCL"];
 const skills3 = ["Linux operating system", "EDA tools"];
-const resume_url = "https://drive.google.com/file/d/12iaFR44Ajdh4AzD-7P1c0Mqb6wPLdIfy/view?usp=sharing";
-const portfolio_url = "https://drive.google.com/file/d/1z4cPB0c8-1XegXN1XU4tjSL04pnMm8DK/view?usp=sharing";
+const resume_url = "https://drive.google.com/file/d/1ShdoiZReO95s2MvK91pS8kKwzmIc0zxS/view?usp=sharing";
+const portfolio_url = "https://drive.google.com/file/d/1jzBLke6vM6s9gLNG2IKN7PgR-uTqjv77/view?usp=sharing";
 
 const experiences = [
   {
